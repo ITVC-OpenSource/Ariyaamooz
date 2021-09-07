@@ -1,0 +1,20 @@
+:root{
+  --light-blue: #0093FF;
+  --medium-blue: #418EC6;
+  --dark-blue: #234E6D;
+  --light-white: #F3F3F3;
+  --medium-white: #DDDDDD;
+  --dark-white: #A0A0A0;
+  --light-black: #383838;
+  --medium-black: #202020;
+  --dark-black: #0A0A0A;
+  --blue: #0077C0;
+  --white: #FDFDFD;
+  --black: #101010;
+  --night-blue: #2C3E50;
+  --silver: #BDC3C7;
+}
+body{
+  margin: 0;
+  background-color: ;
+}
