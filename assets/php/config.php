@@ -3,5 +3,6 @@ $dbh = "localhost";
 $dbu = "root";
 $dbp = "";
 $dbn = "ara";
-$conn = new PDO("mysql:host = $dbh;dbname=$dbn;" , $dbu , $dbp);
+$pdo = new PDO("mysql:host = $dbh;dbname=$dbn;" , $dbu , $dbp);
+$server = "http://localhost/";
 ?>
