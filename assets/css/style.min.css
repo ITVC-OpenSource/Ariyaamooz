@@ -1,6 +1,6 @@
 :root{
-  --light-blue: #0093FF;
-  --medium-blue: #418EC6;
+  --light-blue: #AED0E8;
+  --medium-blue: #0093FF;
   --dark-blue: #234E6D;
   --light-white: #F3F3F3;
   --medium-white: #DDDDDD;
@@ -13,8 +13,9 @@
   --black: #101010;
   --night-blue: #2C3E50;
   --silver: #BDC3C7;
+  --box-blue: #62B7D0;
+  --box-light-blue: #D8EBF0;
 }
 body{
   margin: 0;
-  background-color: var(--medium-white);
 }

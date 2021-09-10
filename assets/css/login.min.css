@@ -1,0 +1,172 @@
+@font-face{
+	font-family: font;
+	src: url(font/font.ttf) format('truetype')
+}
+@font-face{
+    font-family:fonte;
+	src: url(font/fonte.ttf) format('truetype')
+}
+@font-face{
+    font-family:AMYSans;
+	src: url(font/AMYSans.ttf) format('truetype')
+}
+*{
+  font-family:AMYSans;
+}
+body {
+  text-align: center;
+	background-color: var(--box-blue);
+}
+h1 {
+  font-family: AMYSans;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+label {
+  font-size: 125%;
+  font-family: AMYSans;
+  color:var(--box-blue);
+}
+input {
+	color: var(--box-light-blue);
+  border:1px solid var(--box-blue);
+  font-size: 1.5rem;
+  font-size: 150%;
+  font-family: AMYSans;
+  padding: 10px;
+  width:350px;
+  border-top-left-radius:2.5px;
+  border-top-right-radius:2.5px;
+  border-bottom-right-radius:2.5px;
+  border-bottom-left-radius:2.5px;
+}
+button {
+  padding: 10px;
+  font-family: AMYSans;
+  font-weight: 100;
+  background: var(--box-blue);
+  color: var(--box-light-blue);
+  font-size:200%;
+  border:none;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: absolute;
+  display: block;
+  width: 375px;
+  border:2.5px solid var(--box-light-blue);
+}
+p.success,
+p.error {
+  color: var(--box-blue);
+  font-family: AMYSans;
+  background: var(--box-blue);
+  display: inline-block;
+  padding: 2px 10px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  border-bottom-left-radius:3px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+p.error {
+  background: var(--box-light-blue);
+}
+p.null{
+  background: var(--box-light-blue);
+}
+form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background:var(--box-light-blue);
+	height: 355px;
+	padding: 10px;
+	width: 400px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.30), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+	transform: translate(-50% , -50%);
+}
+.uin{
+	margin-top: 10px;
+}
+.pin{
+	margin-top: 20px;
+}
+@media screen and (max-width : 800px) {
+	button,.uin,.pin,input{
+		font-size: 100%;
+		width: 325px;
+	}
+	form{
+		width: 350px;
+		height: 300px;
+	}
+	.uin , .pin{
+		width: 300px;
+		height: auto;
+	}
+	svg{
+		width: 35%;
+		height: 35%;
+	}
+}
+@media screen and (max-width : 500px) {
+	button,.uin,.pin,input{
+		font-size: 75%;
+		width: 275px;
+	}
+	form{
+		width: 300px;
+		height: 275px;
+	}
+	.uin , .pin{
+		width: 250px;
+		height: auto;
+	}
+	svg{
+		width:30%;
+		height: 30%;
+	}
+}
+@media screen and (max-width : 300px) {
+	button,.uin,.pin,input{
+		font-size: 50%;
+		width: 100px;
+	}
+	form{
+		width: 250px;
+		height: 250px;
+	}
+	.uin , .pin{
+		width: 200px;
+		height: auto;
+	}
+	svg{
+		width:30%;
+		height: 30%;
+	}
+}
+path{
+	fill:var(--box-light-blue);
+	color: var(--box-light-blue);
+}
+#login{
+	left: 22.25px;
+}
+#guest{
+	right: 25px;
+}
+.Skymeet{
+	position: absolute;
+	bottom: 0;
+	color: var(--box-light-blue)!important;
+	left:50%;
+	transform:translateX(-50%);
+	z-index: -1;
+}
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}
