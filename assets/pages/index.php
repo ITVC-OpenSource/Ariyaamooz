@@ -16,16 +16,16 @@
       if (isset($_POST['login'])) {
           $username = $_POST['username'];
           $password = $_POST['password'];
-          $query = $connection->prepare("SELECT * FROM users WHERE username=:username");
+          $query = $connection->prepare("SELECT * FROM users WHERE uname=:username");
           $query->bindParam("username", $username, PDO::PARAM_STR);
           $query->execute();
           $result = $query->fetch(PDO::FETCH_ASSOC);
           if (!$result) {
               echo '<p class="error">نام کاربری نادرست است</p>';
           } else {
-              if ( $password == $result["password"]) {
+              if ( $password == $result["passwd"]) {
                   $_SESSION["user"] = $result["email"];
-                  echo header("location: index.php?room=" . $_GET['room'] . "");
+                  echo header("location: panel/");
               } else {
                   echo '<p class="error">رمزعبور نادرست است</p>';
               }
