@@ -2,11 +2,11 @@
   <head>
     <style>
       @keyframes myfirst {
-            0% {left:0px; top:100px;transform: rotate(10);}
-            25% {left:100px; top:100px;}
-            50% {left:150px; top:50px;}
-            75% {left:25px; top:123px;}
-            100% {left:0px; top:100px;}
+            0% {left:100px; top:200px;transform: rotate(0deg);}
+            25% {left:200px; top:300px;transform: rotate(25deg);}
+            50% {left:300px; top:200px;transform: rotate(50deg);}
+            75% {left:200px; top:100px;transform: rotate(25deg);}
+            100% {left:100px; top:200px;transform: rotate(0deg);}
       }
       div {
           width: 100px;
@@ -14,6 +14,7 @@
           border: 2px solid red;
           position: relative;
           animation: myfirst 1s infinite;
+          border-radius: 25%;
       }
     </style>
   </head>

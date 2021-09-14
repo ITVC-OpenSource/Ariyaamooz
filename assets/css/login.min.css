@@ -28,9 +28,8 @@ label {
   color:var(--box-blue);
 }
 input {
-	color: var(--box-light-blue);
+	color: var(--box-blue);
   border:1px solid var(--box-blue);
-  font-size: 1.5rem;
   font-size: 150%;
   font-family: AMYSans;
   padding: 10px;
