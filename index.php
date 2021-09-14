@@ -4,7 +4,7 @@ ROUTE::get("/" , function() {
   include(__DIR__ . "/assets/pages/login.php");
 });
 ROUTE::post("/" , function() {
-  include(__DIR__ . "/assets/pages/index.php");
+  include(__DIR__ . "/assets/pages/login.php");
 });
 ROUTE::get("/panel" , function() {
   include(__DIR__ . "/assets/pages/panel.php");
