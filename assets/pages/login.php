@@ -11,7 +11,6 @@
   <body>
     <div id="login">
     <?php
-      session_start();
       include('assets/php/config.php');
       if (isset($_POST['login'])) {
           $username = $_POST['username'];
@@ -24,7 +23,7 @@
               echo '<p class="error">نام کاربری نادرست است</p>';
           } else {
               if ( $password == $result["passwd"]) {
-                  $_SESSION["user"] = $result["email"];
+                  $_SESSION["uname"] = $result["uname"];
                   echo header("location: panel/");
               } else {
                   echo '<p class="error">رمزعبور نادرست است</p>';
