@@ -9,4 +9,7 @@ ROUTE::post("/" , function() {
 ROUTE::get("/panel" , function() {
   include(__DIR__ . "/assets/pages/panel.php");
 });
+ROUTE::get("test" , function() {
+  include(__DIR__ . "/assets/pages/test.php");
+});
 ?>
