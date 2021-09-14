@@ -1,7 +1,7 @@
 <?php
 include("assets/php/router.php");
 ROUTE::get("/" , function() {
-  include(__DIR__ . "/assets/pages/index.php");
+  include(__DIR__ . "/assets/pages/login.php");
 });
 ROUTE::post("/" , function() {
   include(__DIR__ . "/assets/pages/index.php");
