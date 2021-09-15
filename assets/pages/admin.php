@@ -1,3 +1,3 @@
 <?php
-echo "It's admin page.";
+include(__DIR__ . "/../php/config.php");
 ?>
